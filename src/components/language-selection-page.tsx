@@ -10,7 +10,7 @@ export class LanguageSelectionPage extends React.Component {
 	render() {
 		return (
 			<div>
-				Please select your language....
+				Please select your language.
 			</div>
 		);
 	}
