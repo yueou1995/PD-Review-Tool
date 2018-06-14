@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------
-// <copyright file="language-selection-page.tsx" company="Microsoft">
+// <copyright file="role-selection-page.tsx" company="Microsoft">
 // © Microsoft. All rights reserved.
 // </copyright>
 //-----------------------------------------------------------------------
@@ -8,14 +8,14 @@ import * as React from 'react';
 import { Dropdown, IDropdown, DropdownMenuItemType, IDropdownOption } from 'office-ui-fabric-react/lib/Dropdown';
 
 
-export class LanguageSelectionPage extends React.Component {
+export class RoleSelectionPage extends React.Component {
 	render() {
 		return (
 			<div>
-				Please select your language.
+				Please select your role.
 
 				<Dropdown
-					placeHolder="Please select your language"
+					placeHolder="Please select your role"
 					label="Basic uncontrolled example:"
 					id="Basicdrop1"
 					ariaLabel="Basic dropdown example"
