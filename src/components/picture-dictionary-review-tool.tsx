@@ -4,7 +4,7 @@ import { observer } from 'mobx-react';
 import { LanguageSelectionPage } from './language-selection-page';
 
 
-export class ReviewTool extends React.Component {
+export class PictureDictionaryReviewTool extends React.Component {
   render() {
     return (
       <div>
