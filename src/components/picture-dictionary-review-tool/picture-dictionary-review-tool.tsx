@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { observable } from 'mobx';
 import { observer } from 'mobx-react';
-import { LanguageSelectionPage } from './language-selection-page';
-import { RoleSelectionPage } from './role-selection-page';
-import { LocReviewPage } from './loc-review-page';
-import { ReviewStage, ReviewState } from '../states/review.state';
-import { Test } from './test-page';
+import { LanguageSelectionPage } from '../language-selection-page/language-selection-page';
+import { RoleSelectionPage } from '../role-selection-page/role-selection-page';
+import { LocReviewPage } from '../loc-review-page/loc-review-page';
+import { ReviewStage, ReviewState } from '../../states/review.state';
+import { Test } from '../test-page';
 
 
 @observer

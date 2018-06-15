@@ -7,8 +7,8 @@
 import * as React from 'react';
 import { Dropdown, IDropdown, DropdownMenuItemType, IDropdownOption } from 'office-ui-fabric-react/lib/Dropdown';
 import { DefaultButton, IButtonProps } from 'office-ui-fabric-react/lib/Button';
-import { PictureDictionaryReviewTool } from './picture-dictionary-review-tool';
-import { ReviewStage, ReviewState } from '../states/review.state';
+import { PictureDictionaryReviewTool } from '../picture-dictionary-review-tool/picture-dictionary-review-tool';
+import { ReviewStage, ReviewState } from '../../states/review.state';
 
 export interface ILanguageSelectionProps {
 	reviewState?: ReviewState;
