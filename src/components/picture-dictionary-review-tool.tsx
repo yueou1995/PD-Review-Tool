@@ -3,7 +3,9 @@ import { observable } from 'mobx';
 import { observer } from 'mobx-react';
 import { LanguageSelectionPage } from './language-selection-page';
 import { RoleSelectionPage } from './role-selection-page';
+import { LocReviewPage } from './loc-review-page';
 import { ReviewStage, ReviewState } from '../states/review.state';
+import { Test } from './test-page';
 
 
 @observer
@@ -23,18 +25,20 @@ export class PictureDictionaryReviewTool extends React.Component {
 
     switch (this._reviewState.currentStage) {
       case ReviewStage.LanguageSelection:
-        component = <LanguageSelectionPage />;
+        component = <LanguageSelectionPage reviewState={this._reviewState} />;
         break;
       case ReviewStage.RoleSelection:
-        component = <RoleSelectionPage />;
+        component = <RoleSelectionPage reviewState={this._reviewState} />;
         break;
-        //case ReviewStage.Review:
+      case ReviewStage.Review:
+        component = <LocReviewPage />;
+        break;
     }
 
     return (
       <div>
-        {component}
-      </div>
-    );
-  }
+            {component}
+          </div>
+          );
+        }
 }
