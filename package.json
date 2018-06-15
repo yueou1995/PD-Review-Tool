@@ -1,27 +1,14 @@
 {
-  "name": "mobx-react-typescript-boilerplate",
+  "name": "picture-dictionary-review-tool",
   "version": "1.0.0",
-  "description": "Boilerplate for MobX + React project with Typescript, ES6 compilation and hot code reloading",
+  "description": "Picture Dictionary Review Tool Front End",
   "scripts": {
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mobxjs/mobx-react-typescript-boilerplate.git"
+    "url": "https://github.com/yueou1995/Pictuer-Dictionary-Review-Tool"
   },
-  "keywords": [
-    "react",
-    "reactjs",
-    "boilerplate",
-    "mobx",
-    "starter-kit"
-  ],
-  "author": "Michel Weststrate <mweststrate@gmail.com> (http://github.com/mweststrate)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mobxjs/mobx/issues"
-  },
-  "homepage": "http://mobxjs.github.com/mobx",
   "devDependencies": {
     "@types/react": "^15.0.39",
     "@types/react-dom": "^15.5.1",
