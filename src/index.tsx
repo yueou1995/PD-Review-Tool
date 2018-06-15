@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import {ReviewTool} from './components/review-tool';
+import {PictureDictionaryReviewTool} from './components/picture-dictionary-review-tool';
 
-ReactDOM.render(<ReviewTool />, document.getElementById('root'));
+ReactDOM.render(<PictureDictionaryReviewTool />, document.getElementById('root'));
