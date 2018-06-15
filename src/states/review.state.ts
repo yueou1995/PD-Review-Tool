@@ -13,6 +13,7 @@ export enum ReviewStage {
 }
 
 export class ReviewState {
+  
   @observable
   currentStage: ReviewStage = ReviewStage.LanguageSelection;  
 
