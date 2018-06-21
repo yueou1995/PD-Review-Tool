@@ -1,14 +1,20 @@
 //-----------------------------------------------------------------------
-// <copyright file="language-selection-page.tsx" company="Microsoft">
+// <copyright file="language-selection.tsx" company="Microsoft">
 // © Microsoft. All rights reserved.
 // </copyright>
 //-----------------------------------------------------------------------
 
 import * as React from 'react';
-import { Dropdown, IDropdown, DropdownMenuItemType, IDropdownOption } from 'office-ui-fabric-react/lib/Dropdown';
-import { DefaultButton, IButtonProps } from 'office-ui-fabric-react/lib/Button';
-import { PictureDictionaryReviewTool } from '../picture-dictionary-review-tool/picture-dictionary-review-tool';
+import { Dropdown } from 'office-ui-fabric-react/lib/Dropdown';
+import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
 import { ReviewStage, ReviewState } from '../../states/review.state';
+
+//TODO
+export enum Language {
+  en = 'English',
+  fr = 'French',
+  de = 'German'
+}
 
 export interface ILanguageSelectionProps {
 	reviewState?: ReviewState;

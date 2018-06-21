@@ -1,14 +1,21 @@
 //-----------------------------------------------------------------------
-// <copyright file="role-selection-page.tsx" company="Microsoft">
+// <copyright file="role-selection.tsx" company="Microsoft">
 // © Microsoft. All rights reserved.
 // </copyright>
 //-----------------------------------------------------------------------
 
 import * as React from 'react';
-import { Dropdown, IDropdown, DropdownMenuItemType, IDropdownOption } from 'office-ui-fabric-react/lib/Dropdown';
-import { DefaultButton, IButtonProps } from 'office-ui-fabric-react/lib/Button';
-import { PictureDictionaryReviewTool } from '../picture-dictionary-review-tool/picture-dictionary-review-tool';
+import { Dropdown} from 'office-ui-fabric-react/lib/Dropdown';
+import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
 import { ReviewStage, ReviewState } from '../../states/review.state';
+
+export enum Role {
+  geopol = 'Geo Pol',
+  designer = 'Designer',
+  loc = 'Language Expert',
+  admin = 'Admin',
+  other = 'Other'
+}
 
 export interface IRoleSelectionProps {
 	reviewState?: ReviewState;
