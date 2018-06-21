@@ -1,14 +1,15 @@
 import * as React from 'react';
-import { PrimaryButton } from 'office-ui-fabric-react/lib/Button';
-import { Dropdown, IDropdown, DropdownMenuItemType, IDropdownOption } from 'office-ui-fabric-react/lib/Dropdown';
 
 export class Test extends React.Component {
 
     public render() {
-        
+
         return (
             <div>
-                Hi
+                <h1>
+                    Review page
+                    </h1>
+                Chill, this page is not done yet
             </div>
         )
     }

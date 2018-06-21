@@ -5,12 +5,22 @@
 //-----------------------------------------------------------------------
 
 import * as React from 'react';
+import { ReviewState } from '../../states/review.state';
 
-export class LocReviewPage extends React.Component {
+
+export interface ILocReviewPageProps {
+	reviewState?: ReviewState;
+}
+
+export class LocReviewPage extends React.Component<ILocReviewPageProps, {}> {
 	render() {
+		console.log(this.props.reviewState);
+
 		return (
 			<div>
-                Loc Review Page
+                <h1>Loc Review Page</h1>
+								Language = {this.props.reviewState.language}; //TODO
+								
 			</div>
 		);
 	}
